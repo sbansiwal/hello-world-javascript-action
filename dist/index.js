@@ -66,8 +66,8 @@ try {
   // Get the JSON webhook payload for the event that triggered the workflow
   const payload = JSON.stringify(github.context.payload, undefined, 2)
   console.log(`The event payload: ${payload}`);
-  if (nameToGreet !== 'Sunil Bansiwal') {
-  	core.setFailed("Wrong person to greet");
+  if (nameToGreet == 'Sunil Bansiwal') {
+  	core.setFailed('Wrong person to greet');
   }
 } catch (error) {
   core.setFailed(error.message);
