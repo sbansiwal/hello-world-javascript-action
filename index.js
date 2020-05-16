@@ -11,8 +11,8 @@ try {
   // Get the JSON webhook payload for the event that triggered the workflow
   // const payload = JSON.stringify(github.context.payload, undefined, 2)
   // console.log(`The event payload: ${payload}`);
-  const jiraToken = core.getInput('JIRA_API_TOKEN');
-  console.log(`Jira token value : ${jiraToken}`);
+  const githubUsername = core.getInput('PERSONAL_TOKEN_USER');
+  console.log(`Github username : ${githubUsername}`);
 
   if (nameToGreet != 'Sunil Bansiwal') {
   	console.log(`The name is Sunil Bansiwal`);
