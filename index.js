@@ -11,8 +11,10 @@ try {
   const payload = JSON.stringify(github.context.payload, undefined, 2)
   console.log(`The event payload: ${payload}`);
   if (nameToGreet == 'Sunil Bansiwal') {
-  	console.log(`The name is Sunil Bansiwal`)
+  	console.log(`The name is Sunil Bansiwal`);
   	core.setFailed(`Wrong person to greet`);
+  } else {
+  	console.log(`Not Sunil Bansiwal`);
   }
 } catch (error) {
   core.setFailed(error.message);
