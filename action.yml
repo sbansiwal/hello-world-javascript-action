@@ -5,6 +5,24 @@ inputs:
     description: 'Who to greet'
     required: true
     default: 'World'
+  PERSONAL_TOKEN_VALUE: 
+    description: 'github access token'
+    required: true
+  PERSONAL_TOKEN_USER: 
+    description: 'github username'
+    required: true
+  JIRA_API_TOKEN: 
+    description: 'token to access JIRA api'
+    required: true
+  JIRA_DOMAIN: 
+    description: 'JIRA user domain'
+    required: true
+  JIRA_USER: 
+    description: 'JIRA user e-mail'
+    required: true
+  JIRA_PROJECT_NAME:
+    description: 'JIRA project name'
+    required: true  
 outputs:
   time: # id of output
     description: 'The time we greeted you'
